@@ -4,7 +4,7 @@ export const renderer = reactRenderer(({ children }) => {
   return (
     <html>
       <head>
-        <link href="/static/style.css" rel="stylesheet" />
+        <link href="/src/index.css" rel="stylesheet" />
       </head>
       <body>{children}</body>
     </html>
