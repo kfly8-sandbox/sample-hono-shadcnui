@@ -5,7 +5,7 @@ export const renderer = reactRenderer(({ children }) => {
     <html>
       <head>
         { !!import.meta.env ? (
-          <link href="/src/index.css" rel="stylesheet" />
+          <link href="/src/style.css" rel="stylesheet" />
         ) : (
           <link href="/static/style.css" rel="stylesheet" />
         ) }

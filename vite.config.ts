@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
       build: {
         rollupOptions: {
           input: {
-            style: "./src/index.css",
+            style: "./src/style.css",
           },
           output: {
             dir: "./dist",
