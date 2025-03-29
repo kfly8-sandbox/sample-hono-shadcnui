@@ -3,8 +3,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "preview": "wrangler dev",
-    "deploy": "wrangler deploy"
+    "build": "vite build --mode client",
+    "preview": "bun run build && bunx wrangler dev",
+    "deploy": "bun run build && wrangler deploy"
   },
   "dependencies": {
     "@hono/react-renderer": "^0.3.0",
