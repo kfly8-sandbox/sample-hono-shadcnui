@@ -1,8 +1,5 @@
-```txt
-npm install
-npm run dev
-```
+Sample hono x shadcnui project
 
-```txt
-npm run deploy
-```
+Ref:
+- https://github.com/kfly8-sandbox/sample-hono-tailwindcss
+- https://ui.shadcn.com/docs/installation/vite
