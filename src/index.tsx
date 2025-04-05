@@ -1,6 +1,6 @@
 import { Hono } from 'hono'
 import { renderer } from './renderer'
-import LoginBlock from "@/blocks/login"
+import SandoBlock from "@/blocks/sandbox"
 
 const app = new Hono()
 
@@ -9,7 +9,7 @@ app.use(renderer)
 app.get('/', (c) => {
   return c.render(
     <>
-      <LoginBlock />
+      <SandoBlock />
     </>
   )
 })
