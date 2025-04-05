@@ -1,5 +1,5 @@
 import { GalleryVerticalEnd } from "lucide-react"
-import { LoginForm } from "@/components/login-form"
+import { Form } from "@/components/form"
 
 export default function SandboxBlock() {
   return (
@@ -15,7 +15,7 @@ export default function SandboxBlock() {
         </div>
         <div className="flex flex-1 items-center justify-center">
           <div className="w-full max-w-xs">
-            <LoginForm />
+            <Form />
           </div>
         </div>
       </div>
