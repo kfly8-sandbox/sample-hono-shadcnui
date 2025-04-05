@@ -5,12 +5,20 @@ export const renderer = reactRenderer(({ children }) => {
     <html>
       <head>
         { !!import.meta.env ? (
-          <link href="/src/style.css" rel="stylesheet" />
+          <>
+            <link href="/src/style.css" rel="stylesheet" />
+            <script type="module" src="/src/client.tsx"></script>
+          </>
         ) : (
-          <link href="/static/style.css" rel="stylesheet" />
+          <>
+            <link href="/static/style.css" rel="stylesheet" />
+            <script type="module" src="/static/client.js"></script>
+          </>
         ) }
       </head>
-      <body>{children}</body>
+      <body>
+        <div id="app">{children}</div>
+      </body>
     </html>
   )
 })
